@@ -21,6 +21,11 @@
 		C54F6F57188E4B6600A8B75A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C54F6F55188E4B6600A8B75A /* InfoPlist.strings */; };
 		C54F6F59188E4B6600A8B75A /* CBAdFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F6F58188E4B6600A8B75A /* CBAdFlowTests.m */; };
 		C54F6F63188E4B8700A8B75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F6F62188E4B8700A8B75A /* Main.storyboard */; };
+		C54F6F68188E65CD00A8B75A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C54F6F65188E65CD00A8B75A /* 1.jpg */; };
+		C54F6F69188E65CD00A8B75A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C54F6F66188E65CD00A8B75A /* 2.jpg */; };
+		C54F6F6A188E65CD00A8B75A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C54F6F67188E65CD00A8B75A /* 3.jpg */; };
+		C54F6F6E188E663900A8B75A /* CBAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F6F6D188E663900A8B75A /* CBAdView.m */; };
+		C54F6F71188E6A7400A8B75A /* CBImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F6F70188E6A7400A8B75A /* CBImageInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		C54F6F56188E4B6600A8B75A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C54F6F58188E4B6600A8B75A /* CBAdFlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAdFlowTests.m; sourceTree = "<group>"; };
 		C54F6F62188E4B8700A8B75A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C54F6F65188E65CD00A8B75A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C54F6F66188E65CD00A8B75A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C54F6F67188E65CD00A8B75A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		C54F6F6C188E663900A8B75A /* CBAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAdView.h; sourceTree = "<group>"; };
+		C54F6F6D188E663900A8B75A /* CBAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAdView.m; sourceTree = "<group>"; };
+		C54F6F6F188E6A7400A8B75A /* CBImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBImageInfo.h; sourceTree = "<group>"; };
+		C54F6F70188E6A7400A8B75A /* CBImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBImageInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,8 @@
 		C54F6F33188E4B6600A8B75A /* CBAdFlow */ = {
 			isa = PBXGroup;
 			children = (
+				C54F6F6B188E65FC00A8B75A /* CBAdFlow */,
+				C54F6F64188E65CD00A8B75A /* Images */,
 				C54F6F3C188E4B6600A8B75A /* AppDelegate.h */,
 				C54F6F3D188E4B6600A8B75A /* AppDelegate.m */,
 				C54F6F42188E4B6600A8B75A /* ViewController.h */,
@@ -150,6 +164,27 @@
 				C54F6F55188E4B6600A8B75A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C54F6F64188E65CD00A8B75A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C54F6F65188E65CD00A8B75A /* 1.jpg */,
+				C54F6F66188E65CD00A8B75A /* 2.jpg */,
+				C54F6F67188E65CD00A8B75A /* 3.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C54F6F6B188E65FC00A8B75A /* CBAdFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C54F6F6C188E663900A8B75A /* CBAdView.h */,
+				C54F6F6D188E663900A8B75A /* CBAdView.m */,
+				C54F6F6F188E6A7400A8B75A /* CBImageInfo.h */,
+				C54F6F70188E6A7400A8B75A /* CBImageInfo.m */,
+			);
+			path = CBAdFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54F6F63188E4B8700A8B75A /* Main.storyboard in Resources */,
+				C54F6F68188E65CD00A8B75A /* 1.jpg in Resources */,
+				C54F6F69188E65CD00A8B75A /* 2.jpg in Resources */,
+				C54F6F6A188E65CD00A8B75A /* 3.jpg in Resources */,
 				C54F6F46188E4B6600A8B75A /* Images.xcassets in Resources */,
 				C54F6F38188E4B6600A8B75A /* InfoPlist.strings in Resources */,
 			);
@@ -249,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54F6F71188E6A7400A8B75A /* CBImageInfo.m in Sources */,
 				C54F6F44188E4B6600A8B75A /* ViewController.m in Sources */,
 				C54F6F3E188E4B6600A8B75A /* AppDelegate.m in Sources */,
+				C54F6F6E188E663900A8B75A /* CBAdView.m in Sources */,
 				C54F6F3A188E4B6600A8B75A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +492,7 @@
 				C54F6F5E188E4B6600A8B75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C54F6F5F188E4B6600A8B75A /* Build configuration list for PBXNativeTarget "CBAdFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +501,7 @@
 				C54F6F61188E4B6600A8B75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
