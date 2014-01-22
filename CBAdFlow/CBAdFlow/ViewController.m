@@ -10,7 +10,7 @@
 
 #import "CBAdView.h"
 
-@interface ViewController ()
+@interface ViewController () <CBAdViewDelegate>
 
 @end
 
@@ -20,18 +20,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    /*
-    UILabel *lbl = [[UILabel alloc] init];
-    lbl.frame = CGRectMake(0, 0, 80, 40);
-    lbl.center = CGPointMake(CGRectGetWidth(self.view.frame)/2, CGRectGetHeight(self.view.frame)/2);
-    lbl.text = @"首页";
-    lbl.textAlignment = UITextAlignmentCenter;
-    lbl.textColor = [UIColor blackColor];
-    lbl.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:lbl];
-    
-    self.title = lbl.text;
-     */
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -44,6 +32,7 @@
     }
     
     CBAdView *cbAdView = [[CBAdView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 240) imageArray:arrayImg];
+    cbAdView.aDelegate = self;
     [self.view addSubview:cbAdView];
 }
 
@@ -51,6 +40,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tapImage:(CBImageInfo *)imgInfo withIndex:(NSInteger)pageIndex
+{
+    NSLog(@"点击第%d张, imgInfo:%@", pageIndex, imgInfo);
 }
 
 @end

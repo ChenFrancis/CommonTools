@@ -10,7 +10,17 @@
 
 #import "CBImageInfo.h"
 
+@protocol CBAdViewDelegate<NSObject>
+
+@optional
+
+- (void)tapImage:(CBImageInfo *)imgInfo withIndex:(NSInteger)pageIndex;
+
+@end
+
 @interface CBAdView : UIView <UIScrollViewDelegate>
+
+@property (nonatomic,assign) id<CBAdViewDelegate> aDelegate;
 
 @property (strong, nonatomic) UIScrollView *scroAd;
 @property (strong, nonatomic) UIPageControl *pc;
