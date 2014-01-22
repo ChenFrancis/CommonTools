@@ -16,6 +16,7 @@
 
 @implementation ViewController
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,6 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - CBAdViewDelegate
 - (void)tapImage:(CBImageInfo *)imgInfo withIndex:(NSInteger)pageIndex
 {
     NSLog(@"点击第%d张, imgInfo:%@", pageIndex, imgInfo);
