@@ -113,6 +113,7 @@
             
             // 分页控制
             self.pc = [[UIPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.frame)-20, CGRectGetWidth(self.scroAd.frame), 20)];
+            self.pc.userInteractionEnabled = NO;
             self.pc.numberOfPages = arrayImg.count;
             self.pc.currentPage = 0;
             [self insertSubview:self.pc aboveSubview:self.scroAd];
@@ -181,7 +182,12 @@
         pageIndex = currentPage-1;
     }
     
-    self.pc.currentPage = pageIndex;
+    // 如果是单页，则不会初始化分页控制器
+    if (self.pc)
+    {
+        self.pc.currentPage = pageIndex;
+    }
+    
     _pageIndex = pageIndex;
     
     NSLog(@"滚动结束，可以点击");
