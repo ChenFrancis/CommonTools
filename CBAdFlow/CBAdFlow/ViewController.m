@@ -72,7 +72,7 @@
     }
     
     [_cbAdView refreshFrame:_cbAdView.frame imageArray:arrayImg];
-    [_cbAdView setAutoScroll:YES second:2];
+    [_cbAdView setAutoScroll:YES second:1];
 }
 
 @end
