@@ -24,6 +24,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    /*
+     参考代码
+     http://code.eoe.cn/456/title/_iOS_NSTimer%E5%9C%A8%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C
+     
+     */
+    
     _lblSecond = [[UILabel alloc] init];
     _lblSecond.frame = CGRectMake(50, 50, 100, 50);
     _lblSecond.text = @"";
